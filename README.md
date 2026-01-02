@@ -73,7 +73,51 @@ botdashboard-main/
 - Responsive design with dark mode
 - Beautiful UI with Tailwind CSS
 
-## 📝 Notes
+## � Deploy to Vercel
+
+### Option 1: Deploy with GitHub (Recommended)
+
+1. **Push your code to GitHub** (already done!)
+
+2. **Connect to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Select your GitHub repository
+   - Click "Import"
+
+3. **Configure Environment Variables:**
+   - In Vercel project settings, go to "Environment Variables"
+   - Add your Supabase credentials:
+     ```
+     VITE_SUPABASE_URL=your_supabase_url
+     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+     ```
+
+4. **Deploy:**
+   - Click "Deploy"
+   - Your app will be live in ~2 minutes!
+
+### Option 2: Deploy with Vercel CLI
+
+1. **Install Vercel CLI:**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy:**
+   ```bash
+   vercel
+   ```
+
+3. **Follow the prompts** and add environment variables when asked
+
+4. **Your app is live!** Vercel will give you a URL
+
+### Auto-Deploy from GitHub
+
+Once connected, Vercel automatically deploys every time you push to `main` branch. No manual deployment needed!
+
+## �📝 Notes
 
 - The dashboard currently uses mock data for demonstration
 - Supabase integration is configured but needs backend setup
